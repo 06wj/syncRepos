@@ -15,7 +15,7 @@ jobs:
       env:
         SOURCE_REPO: "git@github.com:BabylonJS/Babylon.js.git"
         SOURCE_BRANCH: "master"
-        DESTINATION_REPO: "git@gitee.com:mirror-open-source/Babylon.js.git"
+        DESTINATION_REPO: "git@gitee.com:fork-open-source/Babylon.js.git"
         DESTINATION_BRANCH: "master"
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
