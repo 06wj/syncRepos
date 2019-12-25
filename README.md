@@ -1,6 +1,6 @@
 # syncRepos
-* git@github.com:BabylonJS/Babylon.js.git
-  * git@gitee.com:fork-open-source/Babylon.js.git
-  * git@git.coding.net:06wj/Babylon.js.git
-* git@github.com:mrdoob/three.js.git
-  * git@gitee.com:fork-open-source/three.js.git
+* https://github.com/BabylonJS/Babylon.js
+  * https://gitee.com/fork-open-source/Babylon.js
+  * https://coding.net/u/06wj/p/Babylon.js/git
+* https://github.com/mrdoob/three.js
+  * https://gitee.com/fork-open-source/three.js
