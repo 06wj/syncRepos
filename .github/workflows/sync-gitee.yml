@@ -4,7 +4,7 @@ on:
     - cron:  '0 * * * *'
   push:
     branches:
-      - master
+      - test
 jobs:
   Babylon:
     name: Babylon.js
