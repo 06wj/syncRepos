@@ -1,4 +1,4 @@
-# syncRepos [![][coding-img]][coding-url] [![][gitee-img]][gitee-url]
+# Auto Sync Repos [![][coding-img]][coding-url] [![][gitee-img]][gitee-url]
 
 自动同步 Github 项目到 [Gitee](https://gitee.com/fork-open-source) & Coding，一小时同步一次。
 
