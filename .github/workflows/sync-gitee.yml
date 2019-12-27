@@ -6,6 +6,20 @@ on:
     branches:
       - test
 jobs:
+  Hilo3d:
+    name: Hilo3d
+    runs-on: ubuntu-latest
+    steps:
+    - name: repo-sync
+      uses: wei/git-sync@v1.1.2
+      env:
+        SOURCE_REPO: "https://github.com/hiloteam/Hilo3d"
+        SOURCE_BRANCH: "dev"
+        DESTINATION_REPO: "git@gitee.com:fork-open-source/Hilo3d.git"
+        DESTINATION_BRANCH: "dev"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      with:
+        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
   Babylon:
     name: Babylon.js
     runs-on: ubuntu-latest
@@ -30,6 +44,20 @@ jobs:
         SOURCE_REPO: "git@github.com:mrdoob/three.js.git"
         SOURCE_BRANCH: "dev"
         DESTINATION_REPO: "git@gitee.com:fork-open-source/three.js.git"
+        DESTINATION_BRANCH: "dev"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      with:
+        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+  phaser:
+    name: phaser
+    runs-on: ubuntu-latest
+    steps:
+    - name: repo-sync
+      uses: wei/git-sync@v1.1.2
+      env:
+        SOURCE_REPO: "git@github.com:photonstorm/phaser.git"
+        SOURCE_BRANCH: "dev"
+        DESTINATION_REPO: "git@gitee.com:fork-open-source/phaser.git"
         DESTINATION_BRANCH: "dev"
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
