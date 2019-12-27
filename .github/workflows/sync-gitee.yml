@@ -13,7 +13,7 @@ jobs:
     - name: repo-sync
       uses: wei/git-sync@v1.1.2
       env:
-        SOURCE_REPO: "https://github.com/hiloteam/Hilo3d"
+        SOURCE_REPO: "git@github.com:hiloteam/Hilo3d.git"
         SOURCE_BRANCH: "dev"
         DESTINATION_REPO: "git@gitee.com:fork-open-source/Hilo3d.git"
         DESTINATION_BRANCH: "dev"
@@ -56,9 +56,9 @@ jobs:
       uses: wei/git-sync@v1.1.2
       env:
         SOURCE_REPO: "git@github.com:photonstorm/phaser.git"
-        SOURCE_BRANCH: "dev"
+        SOURCE_BRANCH: "master"
         DESTINATION_REPO: "git@gitee.com:fork-open-source/phaser.git"
-        DESTINATION_BRANCH: "dev"
+        DESTINATION_BRANCH: "master"
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
         args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
