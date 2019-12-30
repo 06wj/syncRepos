@@ -34,17 +34,3 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
         args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
-  three:
-    name: three.js
-    runs-on: ubuntu-latest
-    steps:
-    - name: repo-sync
-      uses: wei/git-sync@v1.1.2
-      env:
-        SOURCE_REPO: "git@github.com:mrdoob/three.js.git"
-        SOURCE_BRANCH: "dev"
-        DESTINATION_REPO: "git@gitee.com:fork-open-source/three.js.git"
-        DESTINATION_BRANCH: "dev"
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      with:
-        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
