@@ -1,7 +1,7 @@
 # Auto Sync Repos 
 [![][coding-img]][coding-url] [![][gitee-img]][gitee-url]
 
-自动同步 Github 项目到 Coding & [Gitee](https://gitee.com/fork-open-source)，一小时同步一次。
+自动同步 Github 项目到 Coding & [Gitee](https://gitee.com/fork-open-source)，每天同步一次。
 
 ## 项目
 
