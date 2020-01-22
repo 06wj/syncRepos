@@ -8,11 +8,9 @@
 * [Hilo3d](https://github.com/hiloteam/Hilo3d)
   * [coding](https://coding.net/u/06wj/p/Hilo3d/git)
   * [gitee](https://gitee.com/fork-open-source/Hilo3d)
-* [Babylon.js](https://github.com/BabylonJS/Babylon.js)
-  * [~~coding](https://coding.net/u/06wj/p/Babylon.js/git)
-  * [~~gitee](https://gitee.com/fork-open-source/Babylon.js)
 * [three.js](https://github.com/mrdoob/three.js)
   * [coding](https://coding.net/u/06wj/p/three.js/git)
+  * [gitee](https://gitee.com/fork-open-source/Three.js)
 * [phaser](https://github.com/photonstorm/phaser)
   * [coding](https://coding.net/u/06wj/p/phaser/git)
 
