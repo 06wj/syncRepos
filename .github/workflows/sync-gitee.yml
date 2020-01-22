@@ -20,17 +20,31 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
         args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
-#   Babylon:
-#     name: Babylon.js
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: repo-sync
-#       uses: wei/git-sync@v1.1.2
-#       env:
-#         SOURCE_REPO: "git@github.com:BabylonJS/Babylon.js.git"
-#         SOURCE_BRANCH: "master"
-#         DESTINATION_REPO: "git@gitee.com:fork-open-source/Babylon.js.git"
-#         DESTINATION_BRANCH: "master"
-#         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-#       with:
-#         args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+  BabylonJS:
+    name: Babylon.js
+    runs-on: ubuntu-latest
+    steps:
+    - name: repo-sync
+      uses: wei/git-sync@v1.1.2
+      env:
+        SOURCE_REPO: "git@github.com:BabylonJS/Babylon.js.git"
+        SOURCE_BRANCH: "master"
+        DESTINATION_REPO: "git@gitee.com:fork-open-source/Babylon.js.git"
+        DESTINATION_BRANCH: "master"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      with:
+        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+  ThreeJS:
+      name: Three.js
+      runs-on: ubuntu-latest
+      steps:
+      - name: repo-sync
+        uses: wei/git-sync@v1.1.2
+        env:
+          SOURCE_REPO: "git@github.com:mrdoob/three.js.git"
+          SOURCE_BRANCH: "dev"
+          DESTINATION_REPO: "git@gitee.com:fork-open-source/Three.js.git"
+          DESTINATION_BRANCH: "dev"
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
