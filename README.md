@@ -1,21 +1,19 @@
 # Auto Sync Repos 
 [![][coding-img]][coding-url] [![][gitee-img]][gitee-url]
 
-自动同步 Github 项目到 [Gitee](https://gitee.com/fork-open-source) & Coding，一小时同步一次。
+自动同步 Github 项目到 Coding & [Gitee](https://gitee.com/fork-open-source)，每天同步一次。
 
 ## 项目
 
 * [Hilo3d](https://github.com/hiloteam/Hilo3d)
-  * [gitee](https://gitee.com/fork-open-source/Hilo3d)
   * [coding](https://coding.net/u/06wj/p/Hilo3d/git)
+  * [gitee](https://gitee.com/fork-open-source/Hilo3d)
 * [Babylon.js](https://github.com/BabylonJS/Babylon.js)
-  * [gitee](https://gitee.com/fork-open-source/Babylon.js)
-  * [coding](https://coding.net/u/06wj/p/Babylon.js/git)
+  * [~~coding](https://coding.net/u/06wj/p/Babylon.js/git)
+  * [~~gitee](https://gitee.com/fork-open-source/Babylon.js)
 * [three.js](https://github.com/mrdoob/three.js)
-  * [gitee](https://gitee.com/fork-open-source/three.js)
   * [coding](https://coding.net/u/06wj/p/three.js/git)
 * [phaser](https://github.com/photonstorm/phaser)
-  * [gitee](https://gitee.com/fork-open-source/phaser)
   * [coding](https://coding.net/u/06wj/p/phaser/git)
 
 [coding-img]: https://github.com/06wj/syncRepos/workflows/Sync%20Coding/badge.svg

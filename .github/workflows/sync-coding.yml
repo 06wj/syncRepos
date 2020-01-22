@@ -1,7 +1,7 @@
 name: Sync Coding
 on: 
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '11 11 * * *'
   push:
     branches:
       - test
@@ -20,20 +20,20 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       with:
         args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
-  Babylon:
-    name: Babylon.js
-    runs-on: ubuntu-latest
-    steps:
-    - name: repo-sync
-      uses: wei/git-sync@v1.1.2
-      env:
-        SOURCE_REPO: "git@github.com:BabylonJS/Babylon.js.git"
-        SOURCE_BRANCH: "master"
-        DESTINATION_REPO: "git@git.coding.net:06wj/Babylon.js.git"
-        DESTINATION_BRANCH: "master"
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      with:
-        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+#   Babylon:
+#     name: Babylon.js
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: repo-sync
+#       uses: wei/git-sync@v1.1.2
+#       env:
+#         SOURCE_REPO: "git@github.com:BabylonJS/Babylon.js.git"
+#         SOURCE_BRANCH: "master"
+#         DESTINATION_REPO: "git@git.coding.net:06wj/Babylon.js.git"
+#         DESTINATION_BRANCH: "master"
+#         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+#       with:
+#         args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
   three:
     name: three.js
     runs-on: ubuntu-latest
